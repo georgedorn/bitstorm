@@ -2,7 +2,7 @@ CREATE TABLE `bit_peer` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `hash` char(40) NOT NULL,
   `user_agent` varchar(80) DEFAULT NULL,
-  `ip_address` varchar(40) NOT NULL,
+  `ip_address` varchar(256) NOT NULL,
   `key_hash` char(40) NOT NULL,
   `port` smallint(5) unsigned NOT NULL,
   PRIMARY KEY (`id`),
